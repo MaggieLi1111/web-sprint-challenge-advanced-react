@@ -117,9 +117,18 @@ test("displays plants in cart", () => {
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers below.
 
 1. What are the main differences between a stateful and a functional component?
+Stateful component handle component "lifecycle" in a special way and are used for heavy stateful components.
+Functional component are used for light stateless components, simply render JSX.
 
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+componentWillMount is called before the component renders in order to prepare for the first render.
+componentWillUpdate is called whenever we need to re-render and update state or props.
 
 3. Define stateful logic.
+Stateful logic is any code that uses the state, which is stored data that can be updated through events.
+
 
 4. What are the three step of creating a successful test? What is done in each phase? 
+Arrange: renders a React element into a virtual Dom
+Act: query the DOM for a specific node by its text that we expect to see in the browser and simulate user interaction
+Assert: test if the component has been rendered correctly matched
